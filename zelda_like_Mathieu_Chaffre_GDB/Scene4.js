@@ -921,6 +921,7 @@ CreateBalles(){
 
       this.physics.add.overlap(this.cerise_balle, this.spawns, this.hitEnnemie, null, this);
       this.physics.add.overlap(this.cerise_balle, this.spawns_cookie, this.hitEnnemie_mauvais, null, this);
+      this.physics.add.collider(this.cerise_balle, this.worldLayer, this.HitMonde, null, this);
 
 
         this.tir_max_cerise -=1;
@@ -932,6 +933,7 @@ CreateBalles(){
       this.cerise_balle.setVelocityX(600);
       this.physics.add.overlap(this.cerise_balle, this.spawns, this.hitEnnemie, null, this);
       this.physics.add.overlap(this.cerise_balle, this.spawns_cookie, this.hitEnnemie_mauvais, null, this);
+      this.physics.add.collider(this.cerise_balle, this.worldLayer, this.HitMonde, null, this);
 
         this.tir_max_cerise -=1;
       this.save -=1;
@@ -942,6 +944,7 @@ CreateBalles(){
       this.cerise_balle.setVelocityY(-600);
       this.physics.add.overlap(this.cerise_balle, this.spawns, this.hitEnnemie, null, this);
       this.physics.add.overlap(this.cerise_balle, this.spawns_cookie, this.hitEnnemie_mauvais, null, this);
+      this.physics.add.collider(this.cerise_balle, this.worldLayer, this.HitMonde, null, this);
 
         this.tir_max_cerise -=1;
       this.save -=1;
@@ -953,6 +956,7 @@ CreateBalles(){
       this.cerise_balle.setVelocityY(600);
       this.physics.add.overlap(this.cerise_balle, this.spawns, this.hitEnnemie, null, this);
       this.physics.add.overlap(this.cerise_balle, this.spawns_cookie, this.hitEnnemie_mauvais, null, this);
+      this.physics.add.collider(this.cerise_balle, this.worldLayer, this.HitMonde, null, this);
 
         this.tir_max_cerise -=1;
       this.save -=1;
@@ -968,6 +972,7 @@ CreateBalles(){
 
         this.physics.add.overlap(this.cookie_balle, this.spawns, this.hitEnnemie_mauvais, null, this);
         this.physics.add.overlap(this.cookie_balle, this.spawns_cookie, this.hitEnnemie_cookie, null, this);
+        this.physics.add.collider(this.cookie_balle, this.worldLayer, this.HitMonde, null, this);
 
 
           this.tir_max_cookie -=1;
@@ -980,6 +985,7 @@ CreateBalles(){
         this.cookie_balle.setVelocityY(600);
         this.physics.add.overlap(this.cookie_balle, this.spawns, this.hitEnnemie_mauvais, null, this);
         this.physics.add.overlap(this.cookie_balle, this.spawns_cookie, this.hitEnnemie_cookie, null, this);
+        this.physics.add.collider(this.cookie_balle, this.worldLayer, this.HitMonde, null, this);
 
           this.tir_max_cookie -=1;
         this.save -=1;
@@ -990,6 +996,7 @@ CreateBalles(){
         this.cookie_balle.setVelocityY(-600);
         this.physics.add.overlap(this.cookie_balle, this.spawns, this.hitEnnemie_mauvais, null, this);
         this.physics.add.overlap(this.cookie_balle, this.spawns_cookie, this.hitEnnemie_cookie, null, this);
+        this.physics.add.collider(this.cookie_balle, this.worldLayer, this.HitMonde, null, this);
 
           this.tir_max_cookie -=1;
         this.save -=1;
@@ -999,6 +1006,7 @@ CreateBalles(){
             this.cookie_balle.setVelocityX(600);
             this.physics.add.overlap(this.cookie_balle, this.spawns, this.hitEnnemie_mauvais, null, this);
             this.physics.add.overlap(this.cookie_balle, this.spawns_cookie, this.hitEnnemie_cookie, null, this);
+            this.physics.add.collider(this.cookie_balle, this.worldLayer, this.HitMonde, null, this);
 
               this.tir_max_cookie -=1;
             this.save -=1;

@@ -263,6 +263,7 @@ class Scene1 extends Phaser.Scene {
         this.cerise_balle.setVelocityX(-600);
 
         this.physics.add.overlap(this.cerise_balle, this.spawns, this.hitEnnemie, null, this);
+        this.physics.add.collider(this.cerise_balle, this.worldLayer, this.HitMonde, null, this);
 
 
         this.tir_max_cerise -=1;
@@ -280,6 +281,7 @@ class Scene1 extends Phaser.Scene {
         this.cerise_balle = this.cerise.create(this.player.x, this.player.y, "balle").setScale(0.2);
         this.cerise_balle.setVelocityX(600);
         this.physics.add.overlap(this.cerise_balle, this.spawns, this.hitEnnemie, null, this);
+        this.physics.add.collider(this.cerise_balle, this.worldLayer, this.HitMonde, null, this);
 
         this.tir_max_cerise -=1;
         this.save -=1;
@@ -303,6 +305,7 @@ class Scene1 extends Phaser.Scene {
         this.cerise_balle = this.cerise.create(this.player.x, this.player.y, "balle").setScale(0.2);
         this.cerise_balle.setVelocityY(-600);
         this.physics.add.overlap(this.cerise_balle, this.spawns, this.hitEnnemie, null, this);
+        this.physics.add.collider(this.cerise_balle, this.worldLayer, this.HitMonde, null, this);
 
 ;
         this.tir_max_cerise -=1;
@@ -320,6 +323,7 @@ class Scene1 extends Phaser.Scene {
         this.cerise_balle = this.cerise.create(this.player.x, this.player.y, "balle").setScale(0.2);
         this.cerise_balle.setVelocityY(600);
         this.physics.add.overlap(this.cerise_balle, this.spawns, this.hitEnnemie, null, this);
+        this.physics.add.collider(this.cerise_balle, this.worldLayer, this.HitMonde, null, this);
 
         this.tir_max_cerise -=1;
         this.save -=1;
