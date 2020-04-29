@@ -219,7 +219,7 @@ class Scene2 extends Phaser.Scene {
     //mouvement ennemis
     this.timedEvent = this.time.addEvent({
       delay: 700,
-      callback: this.Ennemymove,
+      callback: this.MouvEnnemie,
       callbackScope: this,
       loop: true
     });
@@ -530,7 +530,7 @@ class Scene2 extends Phaser.Scene {
         return {x,y};
       }
     }
-Ennemymove(){
+MouvEnnemie(){
   this.spawns.getChildren().forEach((ennemy) => {
     this.randNumber = Phaser.Math.Between(1,5);
 
