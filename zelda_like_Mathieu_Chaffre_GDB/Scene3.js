@@ -966,7 +966,7 @@ Hitepee(epee, player){
   epee.destroy(true);
   this.epee_unlock = true;
   this.text = this.add
- .text(400, 500, "Tu as récupéré une \népee attaque en restant appuyer sur 1", {
+ .text(400, 500, "Tu as récupéré une \népee attaque en restant appuyé sur 1", {
    font: "18px monospace",
    fill: "#ffffff",
    padding: { x: 20, y: 10 },
