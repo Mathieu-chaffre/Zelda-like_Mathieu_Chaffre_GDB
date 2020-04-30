@@ -382,6 +382,7 @@ class Scene4 extends Phaser.Scene {
   }
 
   update(){
+    
     this.torche_1.anims.play("torche_", true);
     this.torche_2.anims.play("torche_", true);
     this.barniere_1.anims.play("barniere_", true);
